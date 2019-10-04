@@ -1,7 +1,11 @@
 function classwork1(id, text){
-    div = document.getElementById(id);
-    div.innerHTML = "<b><i><u>"+text+"</u></i></b>";
+    newFunction();
 
+
+    function newFunction() {
+        div = document.getElementById(id);
+        div.innerHTML = "<b><i><u>" + text + "</u></i></b>";
+    }
 }
 
 function classwork3(id, text, size){
