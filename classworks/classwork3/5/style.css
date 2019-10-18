@@ -1,0 +1,19 @@
+div{
+    padding: 10px;
+    border:solid red 3px;
+    margin: 20px auto;
+    width: 650px;
+    height: 50px;
+}
+
+#result2 input, button{
+    font-size: 2em;
+    text-align: center;
+    background-color: silver;
+}
+
+#result4 {
+    font-size: 2em;
+    text-align: center;
+    background-color: silver;
+}

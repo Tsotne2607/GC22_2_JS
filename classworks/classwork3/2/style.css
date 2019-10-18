@@ -1,0 +1,30 @@
+body{
+    background:darkblue;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.p1{
+    color:red;
+    font-size: 2em;
+}
+
+.p2{
+    font-size: 2em;
+}
+
+.p3, .p6{
+    color: yellow;
+    font-style: italic;
+}
+
+.p4{
+    color: green;
+    font-size: 1.5em;
+}
+
+.p5{
+    font-size: 1em;
+    text-shadow: 2px 2px red;
+}
