@@ -1,0 +1,31 @@
+#hour, #minute, #second{
+    font-size: 3em;
+}
+
+#zeda{
+    background: white;
+    border: 2px solid blue;
+    margin: auto;
+    height: 700px;
+    width: 1000px;
+}
+
+#qveda{
+    background: white;
+    border: 2px solid blue;
+    margin: auto;
+    height: 200px;
+    width: 500px;
+}
+
+#cube{
+    background:rgb(40, 223, 255);
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    /* margin: auto; */
+    margin-top: -906px;
+    margin-left: 452px;
+    
+
+}
