@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<title>Registration</title>
+<link rel="stylesheet" href="reg.css">
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.div1{
+  font-size: 0.9em;
+  margin: auto;
+  margin-left: 532px;
+  width: 250px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.but{
+  margin: auto;
+  margin-left: 525px;
+  margin-top: 300px;
+  
+
+}
+
+.but1{
+  margin: auto;  
+}
+
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+
+
+
+<button class="but" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">რეგისტრაცია</button>
+<button class="but1" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">შესვლა</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>რეგისტრაცია</h1>
+      <p>შეავსეთ მოცემული ველები დასარეგისტრირებლად</p>
+      <hr>
+      <label for="email"><b>ელ-ფოსტა</b></label>
+      <input type="text" placeholder="შეიყვანეთ ელფოსტა" name="email" required>
+
+      <label for="psw"><b>პაროლი</b></label>
+      <input type="password" placeholder="შეიყვანეთ პაროლი" name="psw" required>
+
+      <label for="psw-repeat"><b>გაიმეორეთ პაროლი</b></label>
+      <input id="pw "type="password" placeholder="გაიმეორეთ პაროლი" name="psw-repeat" required>
+
+      <b>შეიყვანეთ რეგისტრაციის თარიღი</b><br><br>
+      <input type="datetime-local" id="meeting-time" 
+       name="meeting-time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00">
+       <br><br><br>
+
+      <label for="email"><b>მომხმარებლის სახელი</b></label>
+      <input type="text" placeholder="შეიყვანეთ მომხმარებლის სახელი" name="email" required>
+
+      <label for="email"><b>ქვეყანა</b></label>
+      <input type="text" placeholder="შეიყვანეთ ქვეყანა" name="email" required>
+
+      <label for="email"><b>ქალაქი</b></label>
+      <input type="text" placeholder="შეიყვანეთ ქალაქი" name="email" required>
+
+      <label for="email"><b>მობილურის ნომერი</b></label>
+      <input type="text" placeholder="შეიყვანეთ მობილურის ნომერი" name="email" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> დამიმახსოვრე
+      </label>
+
+      <p>ანგარიშის შექმნის თანავე თქვენ ავტომატურად ეთანხმებით ჩვენს <a href="#" style="color:dodgerblue">პირობებს</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">გამოსვლა</button> <a href=""></a>
+        <button type="submit" class="signupbtn">დარეგისტრირება</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>შესვლა</h1>
+      
+      <hr>
+      <label for="email"><b>ელ-ფოსტა</b></label>
+      <input type="text" placeholder="შეიყვანეთ ელფოსტა" name="email" required>
+
+      <label for="psw"><b>პაროლი</b></label>
+      <input type="password" placeholder="შეიყვანეთ პაროლი" name="psw" required>
+
+   
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> დამიმახსოვრე
+      </label>
+
+      
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">გამოსვლა</button> 
+        <button type="submit" class="signupbtn">შესვლა</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<script>
+
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<div class="div1"><a href="index.html">მთავარ გვერდზე დაბრუნება</a></div>
+</body>
+</html>
